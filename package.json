@@ -1,7 +1,7 @@
 {
   "name": "ezalertmejs",
   "version": "0.0.2",
-  "description": "EZAlert.me API Wrapper",
+  "description": "A simple module to send alerts to via Telegram, Messenger, Skype or Slack, via https://EZAlert.me API",
   "main": "ezalertme.js",
   "scripts": {
     "test": "jest"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/giuntim/ezalertmejs.git"
   },
   "keywords": [
-    "ezalertme"
+    "ezalertme","telegram","messenger","skype","slack"
   ],
   "author": "Maurizio Giunti",
   "license": "BSD",
