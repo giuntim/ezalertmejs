@@ -1,2 +1,2 @@
 # ezalertmejs
-Module to consume EZAlert.me API
+Module to consume https://EZAlert.me API
