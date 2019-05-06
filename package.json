@@ -1,0 +1,25 @@
+{
+  "name": "ezalertmejs",
+  "version": "0.0.1",
+  "description": "EZAlert.me API Wrapper",
+  "main": "ezalertme.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giuntim/ezalertmejs.git"
+  },
+  "keywords": [
+    "ezalertme"
+  ],
+  "author": "Maurizio Giunti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giuntim/ezalertmejs/issues"
+  },
+  "homepage": "https://github.com/giuntim/ezalertmejs#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
