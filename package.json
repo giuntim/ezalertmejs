@@ -1,6 +1,6 @@
 {
   "name": "ezalertmejs",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "A simple module to send alerts to via Telegram, Messenger, Skype or Slack, via https://EZAlert.me API",
   "main": "ezalertme.js",
   "scripts": {

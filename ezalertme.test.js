@@ -1,3 +1,9 @@
+/*!
+ * EZAlertMeJS
+ * Author: Maurizio Giunti (CodeGuru Srl)
+ * BSD Licensed
+ */
+
 'use strict'
 
 const ezalertme = require('./ezalertme.js')

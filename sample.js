@@ -1,9 +1,15 @@
-const ezalertme = require('./ezalertme')
+/*!
+ * EZAlertMeJS
+ * Author: Maurizio Giunti (CodeGuru Srl)
+ * BSD Licensed
+ */
 
-// Usually you set EZAlert.me apikey as env variable with
-// set EZALERTMEKEY='Your API key'
-// But if you need you can set your it in the code with
-// ezalertme.token='My EZALert.me API key'
+const ezalertme = require('ezalertmejs')
+
+// Usually you set EZAlert.me API key as env variable with
+// set EZALERTME_APIKEY='Your API key'
+// But if you need you can specify it as second argument of the sendAlert() method
+// ezalertme.sendAlert('Alert text', 'EZAlert.me API KEY')
 
 ezalertme.sendAlert('Houston, we have a problem!').then(rc => {
   console.log(rc)
