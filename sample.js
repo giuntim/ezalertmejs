@@ -4,7 +4,7 @@
  * BSD Licensed
  */
 
-const ezalertme = require('ezalertmejs')
+const ezalertme = require('./ezalertme.js')
 
 // Usually you set EZAlert.me API key as env variable with
 // set EZALERTME_APIKEY='Your API key'

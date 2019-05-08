@@ -20,20 +20,21 @@ class EzalertMe {
    * @returns {Promise} a Promise with the json sent back from the server
    */
   sendAlert (alertText, apikey) {
-    if (!apikey) {
-      if (!this.apikey) {
-        console.log('Missing EZALERTME_APIKEY env variable!')
+    return new Promise((resolve, reject) => {
+      if (!apikey) {
+        if (!this.apikey) {
+          return reject(new Error('Missing EZAlert.me API Key - Define it as EZALERTME_APIKEY env variable'))
+        }
+        apikey = this.apikey
       }
-      apikey = this.apikey
-    }
-    let url = 'https://ezalert.me/v1/sendAlert?apikey=' + encodeURIComponent(apikey) + '&text=' + encodeURIComponent(alertText)
-    return new Promise(function (resolve, reject) {
-      var req = https.request(url, function (res) {
+      let url = 'https://ezalert.me/v1/sendAlert?apikey=' + encodeURIComponent(apikey) + '&text=' + encodeURIComponent(alertText)
+
+      let req = https.request(url, function (res) {
         if (res.statusCode < 200 || res.statusCode >= 300) {
           return reject(new Error('statusCode=' + res.statusCode))
         }
         // cumulate data
-        var body = []
+        let body = []
         res.on('data', function (chunk) {
           body.push(chunk)
         })
